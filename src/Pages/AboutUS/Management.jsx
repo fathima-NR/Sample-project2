@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './management.css';
 import Team from '../../Components/Body/Team';
 
+
 function Management() {
   const headingRef = useRef(null);
   const captionRef = useRef(null);
@@ -76,7 +77,9 @@ function Management() {
           {splitText('"Welcome to Techcybe Family"')}
         </h1>
       </div>
-      <div className='mt-5 pb-5'><Team /></div>
+      <div className='mt-5 pb-5'>
+        <Team/>
+      </div>
     </div>
   );
 }

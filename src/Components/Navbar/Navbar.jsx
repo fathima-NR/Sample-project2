@@ -106,7 +106,7 @@ function Navbar() {
                   <Link to="/ContactUs" className="nav-link" onClick={closeNavbar}>CONTACT US</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="/Contact" className="nav-link" onClick={closeNavbar}><button className='btn btn-outline-primary fw-bold rounded-pills'>Get A Quote</button></a>
+                  <a href="/Contact" className="nav-link" onClick={closeNavbar}><button className='btn btn-outline-dark px-5 fw-bold rounded-pills'>Get A Quote</button></a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link nav-link1 search-icon" href="#" onClick={toggleSearch}><IoSearch /></a>

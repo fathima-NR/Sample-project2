@@ -3,14 +3,15 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import Home from './Pages/Home'
-import Management from './Pages/AboutUS/Management'
-import Teams from './Pages/AboutUS/Teams'
+
 import ContactUs from './Pages/ContactUs'
 import Cyber from './Pages/Services/Cyber'
 import It from './Pages/Services/It'
 import EVL from './Pages/Services/EVL'
 import Cloud from './Pages/Services/Cloud'
 import Webdev from './Pages/Services/Webdev'
+import Management from './Pages/AboutUS/Management';
+import Teams from './Pages/AboutUS/Teams';
 
 
 function Temp() {
@@ -35,7 +36,6 @@ function Temp() {
   <Route path="/OurTeam" element={<Teams />} />
 
   <Route path="/Management" element={<Management />} />
- 
 
 
   <Route path="/ContactUs" element={<ContactUs />} />

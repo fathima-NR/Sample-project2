@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import './ourteams.css'; // Ensure this path matches where your CSS file is located
 // Import images
