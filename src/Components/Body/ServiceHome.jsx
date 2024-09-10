@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import './Servicehome.css'; // Import the CSS file
+import './servicehome.css'; // Import the CSS file
 import { clamp } from 'framer-motion';
 
 function Servicehome() {
