@@ -1,0 +1,173 @@
+.management-image img {
+    opacity: .9;
+    width: 100%; /* Make the image responsive and cover the container width */
+   height: 400px; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%;
+
+  }
+  
+/* Caption overlay styling */
+.management-caption {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6vw; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 1px 2px black;
+ 
+    z-index: 1; /* Ensure it stays above the image */
+  }
+  /* CSS for heading animation */
+.heading1 {
+    display: inline-block;
+
+    white-space: nowrap;
+    font-size: clamp(1.6rem, 5vw, 5rem);
+}
+
+.letter1 {
+    display: inline-block;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-5px); /* Initially above the view */
+    transition: opacity 0.9s ease, transform 0.5s ease; /* Faster transition */
+}
+
+.animate-heading1 .letter1 {
+    opacity: 1; /* Becomes visible */
+    transform: translateY(0); /* Moves into place */
+    transition-delay: calc(var(--i) * 0.07s); /* Faster staggered animation */
+}
+  /* CSS for caption animation */
+  .management-caption {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50px); /* Start from 50px to the right */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .management-caption.animate-caption1 {
+    opacity: 1;
+    transform: translateX(0); /* End at its original position */
+  }
+  
+  /* CSS for letter animation within the caption */
+  .management-caption .letter1 {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50px); /* Each letter starts from 50px to the right */
+    transition: opacity .5s ease-out, transform 1s ease-out;
+  }
+  
+  .management-caption.animate-caption1 .letter1 {
+    opacity: 1;
+    transform: translateX(0); /* Each letter ends at its original position */
+    transition: opacity 0.8s ease-out, transform 1s ease-out;
+    transition-delay: calc(var(--i) * 0.3s); /* Stagger the animation */
+  }
+/* Ensure consistent styling for form controls */
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 47px;
+  }
+  
+  .footer-input {
+    background: transparent;
+    border: none;
+    border-bottom: .1rem solid #a3a3a3;
+    color: #a3a3a3;
+  
+    padding: 2px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+
+  }
+  
+  .footer-input:focus {
+    outline: none;
+    border-bottom: 1px solid #000000; /* Change color on focus */
+  }
+  
+  .footer-button {
+    background-color: #0c56ea;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    background-color:white; /* Darken on hover */
+    color:blue;
+    border: 1px solid blue;
+  }
+  /* Example animation for heading1 */
+/* Example CSS animation definitions */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-heading1 {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .animate-caption1 {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .animate-paragraph {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .animate-form {
+    animation: fadeInUp 1s ease-out backwards;
+  }
+  
+
+  /* Media query for devices with a max-width of 768px (tablets) */
+  @media (max-width: 768px) {
+    .management-image img {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  /* Media query for devices with a max-width of 576px (large phones) */
+  @media (max-width: 576px) {
+    .management-image img {
+      height: 250px; /* Adjust height for phones */
+      
+    }
+    .management-caption{
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+
+    }
+  }
+  
+  /* Media query for devices with a max-width of 375px (small phones) */
+  @media (max-width: 375px) {
+    .management-image img {
+      height: 200px; /* Adjust height for very small screens */
+
+    }
+  }
+
+
+

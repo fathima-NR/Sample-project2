@@ -1,0 +1,21 @@
+.countup-number {
+    font-size: clamp(1.3rem, 7vw, 10rem);
+    font-weight: bold;
+    color:white; /* Text color */
+   
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  
+    
+    font-family: 'Your Font Family', sans-serif; /* Replace with your desired font family */
+  }
+  .h7{
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-shadow: 1px 1px 10px black;
+    color: white;
+  }
+ 
+  @media (max-width: 768px) {
+    .countup-number{
+      font-size: clamp(1.3rem, 3vw, 10rem);
+    }
+  }

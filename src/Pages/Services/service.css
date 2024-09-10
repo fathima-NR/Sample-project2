@@ -1,0 +1,223 @@
+/* CSS File: service.css */
+
+.image-container1 {
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    position: relative; /* To ensure proper overflow handling */
+  }
+  
+  .service-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    animation: zoomAndMove 20s ease-in-out infinite; /* Adjust duration and timing function */
+  }
+  
+  @keyframes zoomAndMove {
+    0% {
+      transform: scale(1) translateX(0) translateY(0); /* Starting position and scale */
+    }
+    50% {
+      transform: scale(1.2) translateX(-4%) translateY(-4%); /* Zoom in and move */
+    }
+    100% {
+      transform: scale(1) translateX(0) translateY(0); /* Reset to original position and scale */
+    }
+  }
+  /* CSS File: service.css */
+
+.heading1 {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: clamp(1.6rem, 5vw, 5rem);
+}
+
+.letter1 {
+    display: inline-block;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-5px); /* Initially above the view */
+    transition: opacity 0.9s ease, transform 0.5s ease; /* Faster transition */
+}
+
+.animate-heading1 .letter1 {
+    opacity: 1; /* Becomes visible */
+    transform: translateY(0); /* Moves into place */
+    transition-delay: calc(var(--i) * 0.07s); /* Faster staggered animation */
+}
+
+/* Add specific styling for the Cybersecurity heading if needed */
+.fs{
+    font-size: clamp(1.6rem, 5vw, 5rem);
+  margin-top: 2rem; /* Add margin if needed */
+}
+
+  /* Add your animations here */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply animations */
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-out;
+  }
+  
+  .animate-fadeInRight {
+    animation: fadeInRight 1s ease-out;
+  }
+  
+/* Define keyframe animations for paragraphs */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply animations */
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 1s ease-out;
+  }
+
+/* Ensure rows use flexbox for ordering */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 767.98px) {
+    /* Reorder columns for the first row */
+    .row1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row1 > .col-md-6:nth-of-type(1) {
+      order: 2; /* Moves the first column (text) to the second position */
+    }
+    
+    .row1 > .col-md-6:nth-of-type(2) {
+      order: 1; /* Moves the second column (image) to the first position */
+    }
+  
+    /* Reorder columns for the second row */
+    .row2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row2 > .col-md-6:nth-of-type(1) {
+      order: 1; /* Moves the first column (image) to the second position */
+    }
+    
+    .row2 > .col-md-6:nth-of-type(2) {
+      order: 2; /* Moves the second column (text) to the first position */
+    }
+  
+    /* Reorder columns for the third row */
+    .row3 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row3 > .col-md-6:nth-of-type(1) {
+      order: 2; /* Moves the first column (text) to the second position */
+    }
+    
+    .row3 > .col-md-6:nth-of-type(2) {
+      order: 1; /* Moves the second column (image) to the first position */
+    }
+  
+    /* Reorder columns for the fourth row */
+    .row4 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row4 > .col-md-6:nth-of-type(1) {
+      order: 1; /* Moves the first column (image) to the second position */
+    }
+    
+    .row4 > .col-md-6:nth-of-type(2) {
+      order: 2; /* Moves the second column (text) to the first position */
+    }
+    .row5 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .row5 > .col-md-6:nth-of-type(1) {
+      order: 2; /* Moves the first column (text) to the second position */
+    }
+    
+    .row5 > .col-md-6:nth-of-type(2) {
+      order: 1; /* Moves the second column (image) to the first position */
+    }
+  }

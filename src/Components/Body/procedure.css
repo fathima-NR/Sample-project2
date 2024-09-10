@@ -1,0 +1,48 @@
+/* procedure.css */
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.img-fluid1 {
+  width: 100%;
+  height: auto;
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-evenly; /* Adjust spacing as needed */
+  cursor: pointer; /* Indicate that headings are clickable */
+  margin-bottom: 20px;
+}
+
+.subheading h5 {
+  margin: 0;
+  padding: 2px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.subheading h5:hover {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+
+.content {
+  padding: 30px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .subheading {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .subheading h5 {
+    margin-bottom: 10px;
+  }
+
+
+}

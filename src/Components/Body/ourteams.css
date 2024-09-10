@@ -1,0 +1,53 @@
+/* Ensure images are responsive and cover the full column width */
+.img-fluid {
+  max-width: 100%;  /* Ensures the image does not exceed the column width */
+  height: auto;     /* Maintains the aspect ratio */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 450px; /* Adjust based on your image dimensions */
+  width: 350px;  /* Adjust based on your image dimensions */
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: transform .4s ease, opacity 1s ease;
+  transform: translateY(50px); /* Start below the view */
+  opacity: 0; /* Start invisible */
+}
+
+.image-container.animate img {
+  transform: translateY(0); /* Move to its original position */
+  opacity: 1; /* Fade in */
+}
+
+.image-container:hover img {
+  transform: translateY(-70px); /* Move image up on hover */
+}
+
+.captions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.3s ease;
+  transform: translateY(100%); /* Hide captions initially */
+}
+
+.image-container:hover .captions {
+  transform: translateY(0); /* Show captions on hover */
+}
+
+.caption {
+  padding: 3px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}

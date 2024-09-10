@@ -1,0 +1,40 @@
+.heading {
+    display: inline-block;
+    opacity: 1;
+    white-space: nowrap;
+    font-size: clamp(1.6rem, 5vw, 5rem);
+  }
+  
+  .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .animate-heading .letter {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--i) * .04s);
+  }
+  
+  .paragraph,
+  .list {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+    transition-delay:1s;
+  }
+  
+  .animate-paragraph {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-list {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .h8{
+    font-size: clamp(1rem, 2vw, 2rem);
+  }

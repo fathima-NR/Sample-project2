@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .step-ani{
+        display: none;
+    }
+}
+.extra{
+    overflow: hidden;
+}
