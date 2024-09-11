@@ -27,7 +27,7 @@
     display: inline-block;
 
     white-space: nowrap;
-    font-size: clamp(1.6rem, 5vw, 5rem);
+    font-size: clamp(1.8rem, 5vw, 5rem);
 }
 
 .letter1 {
@@ -154,7 +154,7 @@
     }
     .management-caption{
         position: absolute;
-        top: 35%;
+        top: 37%;
         left: 30%;
         transform: translate(-50%, -50%);
 
