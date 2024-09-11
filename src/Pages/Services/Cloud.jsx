@@ -77,7 +77,7 @@ function Cloud() {
       <div className="image-container1">
         <img className="img-fluid service-img" src={C1} alt="Service" />
       </div>
-      <p ref={headingRef} className="fs mx-5 fw-bold mt-5">
+      <p ref={headingRef} className="fs mx-5 fw-bold ">
         {splitText('Cloud Solutions')}
       </p>
       <div className="mt-5 mx-5">
