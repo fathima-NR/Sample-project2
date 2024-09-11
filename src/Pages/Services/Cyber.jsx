@@ -76,7 +76,7 @@ function Cyber() {
       <div className="image-container1">
         <img className="img-fluid service-img" src={Cy2} alt="Service" />
       </div>
-      <p ref={headingRef} className="fs ms-4 fw-bold mt-5">
+      <p ref={headingRef} className="fs ms-4 fw-bold">
         {splitText('CYBERSECURITY SOLUTIONS')}
       </p>
       <div className="mt-5 mx-5">

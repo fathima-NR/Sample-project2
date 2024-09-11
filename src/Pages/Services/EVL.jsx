@@ -77,7 +77,7 @@ function EVL() {
       <div className="image-container1">
         <img className="img-fluid service-img" src={E3} alt="Service" />
       </div>
-      <p ref={headingRef} className="fs ms-3 fw-bold mt-5">
+      <p ref={headingRef} className="fs ms-3 fw-bold">
         {splitText('ELV & Network Security System')}
       </p>
       <div className="mt-5 mx-5">

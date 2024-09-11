@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { MdOutlineArrowOutward } from "react-icons/md";
 import CompanyAbout from './Procedure';
 import "./abouthome.css";
+import { Link } from 'react-router-dom';
 
 function AboutHome() {
   const headingRef = useRef(null);
@@ -22,7 +23,7 @@ function AboutHome() {
 
         // Trigger the animation slightly earlier by subtracting 100px
         if (headingPosition < screenPosition - 100) {
-          console.log('Heading animation triggered');
+        
           headingElement.classList.add('animate-heading1');
           setTimeout(() => {
             paragraphElement.classList.add('animate-paragraph1');
@@ -60,9 +61,9 @@ function AboutHome() {
           </p>
         </div>
         <div className="col-md-3 mt-2 pb-4">
-          <a className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8' style={{ color: "black" }} href="/Management">
+          <Link to="/Management" className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8' style={{ color: "black" }}>
             About Us<MdOutlineArrowOutward />
-          </a>
+          </Link>
         </div>
       </div>
       <div>

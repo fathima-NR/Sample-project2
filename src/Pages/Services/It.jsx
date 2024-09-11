@@ -78,7 +78,7 @@ function It() {
       <div className="image-container1">
         <img className="img-fluid service-img" src={It1} alt="Service" />
       </div>
-      <p ref={headingRef} className="fs mx-5 fw-bold mt-5">
+      <p ref={headingRef} className="fs mx-5 fw-bold ">
         {splitText('IT INFRASTRUCTURE')}
       </p>
       <div className="mt-5 mx-5">

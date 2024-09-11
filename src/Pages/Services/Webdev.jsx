@@ -77,7 +77,7 @@ function Webdev() {
       <div className="image-container1">
         <img className="img-fluid service-img" src={W1} alt="Service" />
       </div>
-      <p ref={headingRef} className="fs ms-1 fw-bold mt-5">
+      <p ref={headingRef} className="fs ms-1 fw-bold ">
         {splitText('Website Design and Devolopment')}
       </p>
       <div className="mt-5 mx-5">

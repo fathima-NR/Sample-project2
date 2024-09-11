@@ -3,6 +3,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import './servicehome.css'; // Import the CSS file
 import { clamp } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Servicehome() {
   const headingRef = useRef(null);
@@ -85,9 +86,9 @@ function Servicehome() {
         </div>
       </div>
       <div className="col-md-3 mt-2 pb-3">
-        <a className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8' style={{ color: "black" }} href="/Cyber">
+        <Link to="/Cyber" className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8' style={{ color: "black" }} >
         All Services<MdOutlineArrowOutward />
-        </a>
+        </Link>
       </div>
     </div>
   );

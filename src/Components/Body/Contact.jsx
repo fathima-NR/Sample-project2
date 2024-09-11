@@ -4,6 +4,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import "./abouthome.css";
 import Team from './Team';
 import Contacthome from './Contacthome';
+import { Link } from 'react-router-dom';
 
 function Contact() {
   const headingRef = useRef(null);
@@ -61,9 +62,9 @@ function Contact() {
           </p>
         </div>
         <div className="col-md-3 mt-2 pb-4">
-          <a className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8 ' style={{ color: "black" }} href="/ContactUs">
+          <Link className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2 h8 ' style={{ color: "black" }} to="/ContactUs">
          Contact Us<MdOutlineArrowOutward />
-          </a>
+          </Link>
         </div>
       </div>
      <div>

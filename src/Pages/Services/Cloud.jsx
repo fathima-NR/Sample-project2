@@ -80,7 +80,7 @@ function Cloud() {
       <p ref={headingRef} className="fs mx-5 fw-bold ">
         {splitText('Cloud Solutions')}
       </p>
-      <div className="mt-5 mx-5">
+      <div className=" mx-5">
         <div className="row row1 d-flex align-items-center justify-content-center mt-5 mb-5">
           <div className="col-12 col-md-6">
             <h3 className='ms-2 mt-3'> Microsoft Azure:</h3>

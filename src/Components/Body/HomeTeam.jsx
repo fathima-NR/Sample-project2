@@ -3,6 +3,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 import "./abouthome.css";
 import Team from './Team';
+import { Link } from 'react-router-dom';
 
 function HomeTeam() {
   const headingRef = useRef(null);
@@ -19,11 +20,9 @@ function HomeTeam() {
         const headingPosition = headingElement.getBoundingClientRect().top;
         const screenPosition = window.innerHeight;
 
-        console.log('Scroll event', headingPosition, screenPosition); // Debugging scroll event
-
         // Trigger the animation slightly earlier by subtracting 100px
         if (headingPosition < screenPosition - 100) {
-          console.log('Heading animation triggered');
+         
           headingElement.classList.add('animate-heading1');
           setTimeout(() => {
             paragraphElement.classList.add('animate-paragraph1');
@@ -61,9 +60,9 @@ function HomeTeam() {
           </p>
         </div>
         <div className="col-md-2  mt-2  d-flex align-items-end ">
-          <a className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2   h8 ' style={{ color: "black"}} href="/Teams">
+          <Link className='fw-bold text-decoration-none border-bottom border-1 border-dark p-2   h8 ' style={{ color: "black"}} to="/Teams">
            Team<MdOutlineArrowOutward />
-          </a>
+          </Link>
         </div>
        
       </div>
