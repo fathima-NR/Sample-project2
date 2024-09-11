@@ -5,6 +5,7 @@ import C2 from "/src/assets/imagesmocro.jpg"
 import C3 from "/src/assets/downloadgsuit.jpg"
 import C4 from "/src/assets/imagesoffice.jpg"
 import C5 from "/src/assets/downloadcloudsto.jpg"
+import C6 from "/src/assets/downloadaws.png"
 function Cloud() {
   const headingRef = useRef(null);
   const imagesRef = useRef([]);
@@ -108,7 +109,7 @@ function Cloud() {
             <img
               ref={el => imagesRef.current[1] = el}
               className="img-fluid w-100"
-              src="src/assets/downloadaws.png"
+              src={C6}
               alt=""
               data-animation-class="animate-fadeInLeft"
             />

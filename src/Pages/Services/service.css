@@ -49,7 +49,7 @@
 /* Add specific styling for the Cybersecurity heading if needed */
 .fs{
     font-size: clamp(1.6rem, 5vw, 5rem);
-  margin-top: 2rem; /* Add margin if needed */
+  margin-top: 1rem; /* Add margin if needed */
 }
 
   /* Add your animations here */
