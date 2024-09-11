@@ -102,7 +102,7 @@ function ContactUs() {
             <input type="tel" className="footer-input mx-5 mb-4 mt-3" id="phone" placeholder="Enter phone number" name="phone" required />
             <input type="email" className="footer-input mx-5 mb-4  mt-3" id="email" placeholder="Enter email" name="email" required />
             <textarea className="footer-input mx-5 mb-4  mt-3" id="message" placeholder="Enter message" name="message" required></textarea>
-            <button type="submit" className="footer-button ms-5 mb-4 w-25 p-2  mt-4">Send</button>
+            <button type="submit" className="footer-button ms-5 mb-4 w-50 d-flex align-items-center justify-content-center p-2  mt-4">Send</button>
           </form>
         </div>
       </div>

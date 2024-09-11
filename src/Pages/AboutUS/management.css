@@ -119,7 +119,7 @@
     .management-image img {
     
       width: 100%; /* Make the image responsive and cover the container width */
-     height: 200px; /* Maintain aspect ratio */
+     height: 250px; /* Maintain aspect ratio */
  
   
     }
@@ -127,7 +127,7 @@
   /* Caption overlay styling */
   .management-caption {
       position: absolute;
-      top: 60%;
+      top: 30%;
       left: 30%;
       transform: translate(-50%, -50%);
  

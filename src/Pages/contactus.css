@@ -142,7 +142,7 @@
   /* Media query for devices with a max-width of 768px (tablets) */
   @media (max-width: 768px) {
     .management-image img {
-      height: 300px; /* Adjust height for smaller screens */
+      height: 250px; /* Adjust height for smaller screens */
     }
   }
   
