@@ -56,7 +56,7 @@ function HomeTeam() {
           <h1 ref={headingRef} className='heading1 ms-2 fw-bold ' style={{ whiteSpace: 'pre' }}>
             {splitText('"Meet the team behind the work"')}
           </h1>
-          <p ref={paragraphRef} className='fs-4 text-start  ms-5 mt-4 paragraph1'  style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
+          <p ref={paragraphRef} className=' text-start  ms-5 mt-4 paragraph1'  style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
           At Techcybe, we appreciate the hard work and dedication of our employees and partners.
           </p>
         </div>

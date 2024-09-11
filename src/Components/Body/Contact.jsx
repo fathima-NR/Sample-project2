@@ -56,7 +56,7 @@ function Contact() {
           <h1 ref={headingRef} className='heading1 ms-4 fw-bold ' style={{ whiteSpace: 'pre' }}>
             {splitText('"Stay Connected"')}
           </h1>
-          <p ref={paragraphRef} className='fs-4 w-75 ms-5 mt-4 paragraph1' style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
+          <p ref={paragraphRef} className=' ms-5 mt-4 paragraph1' style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
           Stay connected with our team and never miss a design update, industry news, or special offer
           </p>
         </div>

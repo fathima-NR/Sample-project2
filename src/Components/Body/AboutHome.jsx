@@ -55,7 +55,7 @@ function AboutHome() {
           <h1 ref={headingRef} className='heading1 ms-4 fw-bold text-center' style={{ whiteSpace: 'pre' }}>
             {splitText('"Discover Our Story"')}
           </h1>
-          <p ref={paragraphRef} className='fs-4  ms-5  mt-4 paragraph1' style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
+          <p ref={paragraphRef} className='  ms-5  mt-4 paragraph1' style={{fontSize:'clamp(1.2rem,3vw,1.5rem)'}}>
           Shaping the digital world, today – welcome to our IT innovation.
           </p>
         </div>

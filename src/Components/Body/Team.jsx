@@ -66,7 +66,7 @@ const Team = () => {
             src={jam}
             alt="Team member"
             
-            style={{ height: "130vh",width:"100%" }}
+            style={{ height: "auto",width:"100%" }}
             initial="hidden"
             animate={inView1 ? 'visible' : 'hidden'}
             variants={fadeInFromBottom}
