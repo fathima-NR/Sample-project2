@@ -4,9 +4,12 @@
     overflow: hidden;
     height: 500px;
     width: 100%;
+    margin-bottom: 1%;
     position: relative; /* To ensure proper overflow handling */
   }
-  
+  /* Add temporary styles for debugging */
+
+
   .service-img {
     object-fit: cover;
     height: 100%;
@@ -49,7 +52,7 @@
 /* Add specific styling for the Cybersecurity heading if needed */
 .fs{
     font-size: clamp(1.6rem, 5vw, 5rem);
-  margin-top: 1rem; /* Add margin if needed */
+margin-top: 0%;
 }
 
   /* Add your animations here */
@@ -144,6 +147,13 @@
   
   .animate-slideInRight {
     animation: slideInRight 1s ease-out;
+  }
+
+  @media (max-width: 767px) {
+.image-container1{
+  height: 300px;
+width: 100%;
+}
   }
 
 /* Ensure rows use flexbox for ordering */
